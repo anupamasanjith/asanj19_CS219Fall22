@@ -11,6 +11,7 @@ public class HW7 {
         for (int i = 0; i < aos.length - 1; i++) {
             if (aos[i].equals(aos[i + 1])) {
                 return true;
+                // if string at i is same as string next to it (i+1) return true.
             }
         }
         return false; // just to shut up error message
@@ -27,6 +28,7 @@ public class HW7 {
             for (int j = 0; j < aos.length; j++) {
                 if (aos[i].equals(aos[j]) && i != j) { // looking at all combinations and
                     // prevent returning true for the word itself
+                    // if string at i is the same as another string at j return true
                     return true;
                 }
             }
@@ -43,6 +45,7 @@ public class HW7 {
             for (int j = 0; j < nums.length; j++) {
                 if (nums[i] + nums[j] == target && i != j) {
                     return true;
+                    // if number at i + number at j = number at target, return true.
                 }
             }
         }
@@ -56,6 +59,7 @@ public class HW7 {
         char[] aoc = new char[s.length()];
         for (int i = 0; i < aoc.length; i++) {
             for (int j = 0; j < s.length(); j++) {
+                // when i = j, character at index j in string s is character at index i of array.
                 if (i == j) {
                     aoc[i] = s.charAt(j);
                 }
@@ -70,11 +74,11 @@ public class HW7 {
         Hint: Use make_array, Arrays.sort, and Arrays.equals directly.
      */
     public static boolean isAnagram(String s1, String s2) {
-        char[] aoc1 = make_array(s1);
-        char[] aoc2 = make_array(s2);
-        Arrays.sort(aoc1);
-        Arrays.sort(aoc2);
-        if (Arrays.equals(aoc1, aoc2)){
+        char[] aoc1 = make_array(s1); // array of string s1
+        char[] aoc2 = make_array(s2); // array of string s2
+        Arrays.sort(aoc1); // sorting array s1
+        Arrays.sort(aoc2); // sorting array s2
+        if (Arrays.equals(aoc1, aoc2)){ // if array aoc1 = array aoc 2 return true.
             return true;
         }
         return false;
