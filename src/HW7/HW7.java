@@ -128,7 +128,7 @@ public class HW7 {
         System.out.println(!isAnagram("pizza", "sauce"));
 
         int[] nums = {3, 5, 5, 5, 8, 21, 21, 23, 34, 39, 39, 40, 40, 40, 41};
-        System.out.println(numDifferent(nums)==1);
+        System.out.println(numDifferent(nums)==9);
 
         int[] nums2 = {1, 2, 11, 17, 19, 20, 23, 24, 25, 26, 31, 34, 37, 40, 41};
         System.out.println(numDifferent(nums2) == 15);
