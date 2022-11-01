@@ -12,4 +12,5 @@ public class DigitExtractor {
         System.out.println(last(2753) == 3);
         System.out.println(last(-749) ==9);
     }
+
 }
